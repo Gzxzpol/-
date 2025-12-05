@@ -1,25 +1,5 @@
-[build]
-command = ""
+name = "gzxcpol"
+compatibility_date = "2025-12-05"
 
-[build.upload]
-format = "service-worker"
-
-[[build.upload.rules]]
-type = "Text"
-globs = ["**/*.html"]
-
-[[build.upload.rules]]
-type = "Text"
-globs = ["**/*.css"]
-
-[[build.upload.rules]]
-type = "Text"
-globs = ["**/*.js"]
-
-[[build.upload.rules]]
-type = "CompiledWasm"
-globs = ["**/*.wasm"]
-
-[[build.upload.rules]]
-type = "Text"
-globs = ["**/*.txt"]
+[site]
+bucket = "./"
